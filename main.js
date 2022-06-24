@@ -1,11 +1,11 @@
 const mapImg = () => {
-  return `/images/map.png?${Date.now()+Math.floor(Math.random()*100000)}`;
+  return `./images/map.png?${Date.now()+Math.floor(Math.random()*100000)}`;
 }
 const infoImg = () => {
-  return `/images/info.png?${Date.now()+Math.floor(Math.random()*100000)}`;
+  return `./images/info.png?${Date.now()+Math.floor(Math.random()*100000)}`;
 }
 const arrowImg = () => {
-  return `/images/arrow.png?${Date.now()+Math.floor(Math.random()*100000)}`;
+  return `./images/arrow.png?${Date.now()+Math.floor(Math.random()*100000)}`;
 }
 
 window.onload = function() {
