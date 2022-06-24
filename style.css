@@ -1,0 +1,145 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-box {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: #FFF;
+  max-width: 500px;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  animation: modalAnimate .4s ease;
+}
+
+@keyframes modalAnimate {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#modal {
+  display: none;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.btn-return {
+  background-color: #4c4c4c;
+  color: #FFF;
+  border: 0;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-return:hover {
+  background-color: #676767;
+}
+
+.panolens-infospot {
+  font-size: 2rem;
+}
+
+#loading {
+  display: none;
+}
+
+.loading-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0,0,0,.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #01C3B1;
+  border-top-color: #0087D6;
+  border-right-color: #0087D6;
+  border-bottom-color: #0087D6;
+  border-radius: 100%;
+  margin: 1rem auto 0;
+  animation: circle infinite 0.75s linear;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loadingText {
+  color: #FFF;
+  font-size: 2rem;
+}
+
+.copy-right {
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+  color: #fff;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+.copy-right a {
+  color: #FFF;
+}
+
+.copyright-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.copyright-img:hover {
+  filter: brightness(2);
+}

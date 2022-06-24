@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>國立科學工藝VR博物館</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <meta property="og:url" content="https://happy9990929.github.io/"/>
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="國立科學工藝VR博物館" />
+  <meta property="og:description" content="使用Panolens與three打造國立科學工藝VR博物館"/>
+  <meta property="og:image" content="" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="565" />
+  <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+  <div id="container"></div>
+  <div id="modal">
+    <div class="modal-box">
+      <div class="modal">
+        <div class="modal-header" id="modalTitle"></div>
+        <div class="modal-body" id="modalText"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn-return" id="return">返回</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="loading">
+    <div class="loading-box">
+      <div>
+        <div id="loadingText"></div>
+        <div class="loading"></div>
+      </div>
+    </div>
+  </div>
+  <div class="copy-right">
+    <div id="toggleCopyright">
+      <img src="./images/copyright.png" class="copyright-img">
+    </div>
+    <div id="copyrightText" style="display: none">
+      本站僅供學術研究，非實際場景，無商業用途，圖片來源取自<a href="http://163.20.119.100/f2blog/index.php?load=read&id=2785" target="_blank">大學塾</a>
+    </div>
+  </div>
+  <script src="https://pchen66.github.io/js/three/three.min.js"></script>
+  <script src="https://rawgit.com/pchen66/panolens.js/dev/build/panolens.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
