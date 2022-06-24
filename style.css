@@ -26,7 +26,7 @@ html, body {
 .modal {
   background-color: #FFF;
   max-width: 500px;
-  width: 100%;
+  width: 86%;
   padding: 1rem;
   border-radius: 1rem;
   animation: modalAnimate .4s ease;
